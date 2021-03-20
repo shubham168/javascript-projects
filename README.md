@@ -1,2 +1,7 @@
 # javascript-projects
- Basic javascript projects handson
+
+Basic javascript projects handson
+
+## First project
+
+- Simple Clock
