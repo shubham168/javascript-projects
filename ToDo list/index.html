@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">ToDos list</h2>
+
+      <div class="form-group">
+        <label for="listElement">Title </label>
+        <br /><input type="text" name="listElement" id="listElement" /><br />
+        <small>Add an item to the list</small>
+      </div>
+      <div class="form-group">
+        <label for="description"> Description </label>
+        <br />
+        <textarea
+          name="description"
+          id="description"
+          cols="100"
+          rows="2"
+        ></textarea>
+      </div>
+      <button type="button" class="btn submit" id="add">Add to list</button>
+
+      <div class="items">
+        <hr />
+        <h2>Your Items</h2>
+        <button type="button" class="btn reset" id="add" onclick="reset()">Clear list</button>
+        <hr />
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Sr.No</th>
+              <th>Item Title</th>
+              <th>Item Description</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

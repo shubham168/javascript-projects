@@ -1,0 +1,50 @@
+.container {
+  margin: 40px;
+    width: fit-content;
+  padding: 10px 80px;
+}
+.title {
+  text-align: center;
+}
+input {
+  border-radius: 5px;
+  border-width: 1px;
+  width: 717px;
+  height: 20px;
+
+  padding: 2px;
+}
+form {
+  margin: 10px 200px;
+  align-content: center;
+}
+.items{
+    margin: 10px 200px;
+    align-content: center;
+  }
+
+label {
+  color: gray;
+  margin-block-end: 10px;
+}
+.form-group {
+  margin-bottom: 12px;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.submit {
+  background: green;
+  color: aliceblue;
+}
+.deleted {
+  background-color: red;
+  color: whitesmoke;
+}
+.reset{
+    background-color: blue;
+}
+
