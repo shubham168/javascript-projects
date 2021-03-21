@@ -1,0 +1,36 @@
+
+
+.cal h2 {
+    margin: 2% 18%;
+    color: whitesmoke;
+    padding: 3%;
+  }
+  
+
+  .input {
+    margin: 1%;
+    padding: 2%;
+    color: whitesmoke;
+    margin: 0% 20%;
+  }
+  .cal {
+    margin: 10% 20%;
+    padding: 2%;
+  }
+  
+  .result  {
+    margin: 2% 40%;
+    background: white;
+    
+    text-align: center;
+  }
+  #exp{
+    border-radius: 8px;
+    margin: 5% 20%;
+
+  }
+  .dropdown{
+    padding:2%  50%;
+  }
+
+  

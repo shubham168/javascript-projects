@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cal">
+      <div
+        class="container"
+        style="padding-bottom: 1%; background-color: #3f4e5a"
+      >
+        <h2 style="color: white">Welcome to Calculator App</h2>
+        <div class="input">
+          <label style="padding-left: 20px"
+            >Enter First Digit
+            <input type="number" id="in1" />
+          </label>
+
+          <div class="dropdown">
+            <div>
+              <select id="exp">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+              </select>
+            </div>
+          </div>
+
+          <label
+            >Enter Second Digit
+            <input type="number" id="in2" />
+          </label>
+        </div>
+        <div>
+          <button
+            type="button"
+            class="btn btn-success"
+            style="margin: 2% 45%"
+            onclick="result()"
+          >
+            Submit
+          </button>
+        </div>
+
+        <h2 class="result" style="color: black" id="result">Your Result</h2>
+      </div>
+    </div>
+    <script src="./javascript.js"></script>
+  </body>
+</html>
