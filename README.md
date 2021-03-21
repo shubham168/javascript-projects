@@ -2,7 +2,7 @@
 
 Basic javascript projects handson
 
-## First project
+## Project List
 
 - Simple Clock
 - TODO App
