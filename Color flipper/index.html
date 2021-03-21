@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color flipper</title>
+    <style>
+      .container{
+          display: flexbox;
+          margin:20% 35%;
+          padding: 5%;
+          border-radius: 5%;
+          background-color: burlywood;
+
+      }
+      .input{
+          border-radius: 6px;
+          padding: 3%;
+          margin: 0% 5%;
+      }
+      .btndiv{
+          margin: 5% 6%;
+          border-radius: 20%;
+      }
+      .btn{
+          border-radius: 10%;
+          border-width: 1px;
+      }
+      .container {
+          font-family: cursive;}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Enter the background Color here</h2>
+      <input type="text" class="input" />
+      <div class="btndiv">
+        <input type="button" onclick="flip()" value="Change" class="btn" />
+        <input
+          type="button"
+          onclick="random()"
+          value="Random Color"
+          class="btn"
+        />
+      </div>
+      <h3></h3>
+    </div>
+    <script>
+      var input = document.querySelector("input");
+
+      var colors = [
+        "blue",
+        "pink",
+        "black",
+        "purple",
+        "#f34",
+        "#7ac",
+        "white",
+        "violet",
+      ];
+
+      function isValidColor() {
+        var s = new Option().style;
+        s.color = input.value;
+
+        // return 'false' if color wasn't assigned
+        return s.color == input.value.toLowerCase();
+      }
+      function random() {
+        let randomValue = colors[Math.floor(Math.random() * colors.length)];
+        console.log(randomValue);
+        document.body.style.backgroundColor = randomValue;
+      }
+      function flip() {
+        if (isValidColor()) {
+          document.body.style.backgroundColor = input.value;
+        } else {
+          let error = document.querySelector("h3");
+          error.style.color = "Red";
+          error.innerText = "Entered color is not avaliable";
+          console.log(error.innerText);
+        }
+      }
+    </script>
+  </body>
+</html>
