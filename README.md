@@ -6,3 +6,4 @@ Basic javascript projects handson
 
 - Simple Clock
 - TODO App
+- Color Flipper
